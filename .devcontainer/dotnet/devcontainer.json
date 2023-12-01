@@ -19,7 +19,7 @@
 	// }
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "dotnet restore",
+	"postCreateCommand": ". ${NVM_DIR}/nvm.sh && nvm install --lts && dotnet restore",
 
 	// Configure tool-specific properties.
 	"customizations": {
