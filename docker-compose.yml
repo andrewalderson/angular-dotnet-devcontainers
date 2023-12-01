@@ -7,3 +7,12 @@ services:
     volumes:
       - .:/workspace:cached
     command: sleep infinity
+
+  dotnet:
+    image: "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm"
+    tty: true
+    volumes:
+      - .:/workspace:cached
+      - ${HOME}/.aspnet/https:/home/vscode/.aspnet/https:cached
+      - ${HOME}/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+    command: sleep infinity
