@@ -1,0 +1,13 @@
+{
+  "name": "angular-dotnet-devcontainers",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npx mookme init --only-hook"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@escape.tech/mookme": "^2.5.0"
+  }
+}
