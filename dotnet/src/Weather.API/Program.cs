@@ -1,10 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options => options.AddPolicy("allowAny", o => o.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
 // Add services to the container.
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseCors("allowAny");
 
 var summaries = new[]
 {
