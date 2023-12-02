@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npx mookme init --only-hook"
+    "postinstall": "npx mookme init --only-hook --skip-types-selection"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
